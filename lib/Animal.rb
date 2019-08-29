@@ -10,7 +10,7 @@ class Animal
 
     @@all = []
 
-    def initialize(species, weight, nickname, zoo)
+    def initialize(species, weight, nickname)
 
         # Instance Variables #
         @species = species
@@ -42,7 +42,7 @@ class Animal
     end
 
     def zoo
-        
+        @zoo
     end
 
     # Class #
@@ -59,8 +59,3 @@ class Animal
 #binding.pry
 end
 
-animal1 = Animal.new("Spider", 1, "Ferdinand")
-animal2 = Animal.new("Porcupine", 5, "Maurice")
-animal3 = Animal.new("Porcupine", 6.5, "Bernard")
-porcs = Animal.find_by_species("Porcupine")
-porcs.each{|animal| puts animal.nickname}
