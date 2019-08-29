@@ -5,6 +5,6 @@ require 'pry'
 
 #Test your code here
 
-
-binding.pry
-puts "done"
+# animal_1 = 
+# animal_2 
+# animal_3
