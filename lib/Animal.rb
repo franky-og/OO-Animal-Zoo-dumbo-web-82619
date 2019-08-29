@@ -10,13 +10,13 @@ class Animal
 
     @@all = []
 
-    def initialize(species, weight, nickname)
+    def initialize(species, weight, nickname, zoo)
 
         # Instance Variables #
         @species = species
         @weight = weight
         @nickname = nickname
-        @zoo = zoo
+        @zoo = zoo.name
 
         # Class Variables #
         @@all << self
@@ -56,6 +56,6 @@ class Animal
         self.all.select{|animal| animal.species == species}
 
     end
-#binding.pry
+binding.pry
 end
 
